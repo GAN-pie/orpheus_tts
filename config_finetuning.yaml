@@ -1,0 +1,23 @@
+# Model
+model_name: "canopylabs/3b-fr-pretrain-research_release"
+tokenizer_name:  "canopylabs/3b-fr-pretrain-research_release"
+audio_encoder_name: "hubertsiuzdak/snac_24khz"
+
+# Training Args
+epochs: 3
+batch_size: 4
+number_processes: 8
+pad_token: 128263
+save_steps: 500
+learning_rate: 5.0e-5
+ratio: null
+
+# Datasets
+text_QA_dataset: null
+TTS_dataset: "MrDragonFox/Elise"
+encoded_dataset: "data/encoded"
+
+# Naming and paths
+save_folder: "checkpoints"
+project_name: "finetune-orpheus"
+run_name: "ft-orpheus-fr"
